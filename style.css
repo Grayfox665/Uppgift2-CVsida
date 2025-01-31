@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-template-areas: "header navigation" "article article" "title title"
+    "section section" "footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation{
+    grid-area: navigation;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.Projekts{
+    grid-area: title;
+}
+
+.Projekt-rows{
+    display: flex;
+    justify-content: space-around;
+    grid-area: section;
+    border: 1px solid black;
+}
