@@ -9,7 +9,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
-    grid-template-areas: "header navigation" "article article" "title title"
+    grid-template-areas: "header navigation" "picture article" "title title"
     "section section" "footer footer";
 }
 
