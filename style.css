@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background: linear-gradient(360deg, rgba(4, 141, 175, 0.418), rgb(0, 4, 255));
+}
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,12 +31,17 @@
     text-align: center;
 }
 
-.footer{
-    grid-area: footer;
-    background-color: lightgray;
-    color: black;
-    text-align: center;
-    padding: 10px;
+.picture{
+    background-color: antiquewhite;
+    width: 1fr;
+    height: 550px;
+}
+
+.article{
+    border: 1px solid grey;
+    background-color: antiquewhite;
+    width: 1fr;
+    height: auto;
 }
 
 .Projekts{
@@ -45,5 +52,19 @@
     display: flex;
     justify-content: space-around;
     grid-area: section;
-    border: 1px solid black;
+}
+.Projekt-card{
+    width: 300px;
+    height: 450px;
+    background-color: red;
+    border: 1px solid rgb(177, 0, 0);
+    border-radius: 5px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 10px;
 }
