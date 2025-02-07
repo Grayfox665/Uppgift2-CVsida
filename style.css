@@ -11,7 +11,7 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
-    grid-template-areas: "header navigation" "picture article" "title title"
+    grid-template-areas: "header navigation" "profile profile" "title title"
     "section section" "footer footer";
 }
 
@@ -31,16 +31,23 @@ body{
     text-align: center;
 }
 
-.picture{
-    background-color: antiquewhite;
-    width: 1fr;
-    height: 550px;
+.profile{
+    display: flex;
+    grid-area: profile;
+    margin: 10px;
 }
 
-.article{
+.profile-picture{
+    background-color: antiquewhite;
+    width: 50vw;
+    height: 550px;
+    margin-right:10px ;
+}
+
+.profile-article{
     border: 1px solid grey;
     background-color: antiquewhite;
-    width: 1fr;
+    width: 50vw;
     height: auto;
 }
 
@@ -59,6 +66,7 @@ body{
     background-color: red;
     border: 1px solid rgb(177, 0, 0);
     border-radius: 5px;
+    margin: 10px;
 }
 
 .footer{
@@ -67,4 +75,38 @@ body{
     color: black;
     text-align: center;
     padding: 10px;
+}
+
+
+/* mobile mode */
+@media(max-width: 480px){
+    .grid-container{
+        grid-template-areas: "header navigation" "profile profile" 
+        "title title" "section" "section" "footer footer" ;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+.profile-picture{
+    width: 95vw;
+
+}
+
+.profile-article{
+    width: 95vw;
+
+}
+
+    .Projekt-rows{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+
+        
+    }
+    .Projekt-card{
+        width: 250px;
+        height: 300px;
+        margin: 10px;
+    }
 }
