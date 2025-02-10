@@ -39,8 +39,8 @@ body{
 
 .profile-picture{
     background-color: antiquewhite;
-    width: 50vw;
-    height: 550px;
+    max-width: 50%;
+    height: auto;
     margin-right:10px ;
 }
 
@@ -89,7 +89,7 @@ body{
         flex-direction: column;
     }
 .profile-picture{
-    width: 95vw;
+    max-width:100%;
 
 }
 
