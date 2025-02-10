@@ -51,6 +51,7 @@ body{
     height: auto;
 }
 
+/* Projekts styling */
 .Projekts{
     grid-area: title;
 }
@@ -62,11 +63,31 @@ body{
 }
 .Projekt-card{
     width: 300px;
-    height: 450px;
+    height: 400px;
     background-color: red;
     border: 1px solid rgb(177, 0, 0);
     border-radius: 5px;
     margin: 10px;
+}
+
+#Projekt-1{
+    background-image: url(./picture/programming-3652497_640.jpg);
+    color: white;
+}
+
+#Projekt-2{
+    background-image: url(./picture/website-647013_640.jpg);
+    color: white;
+}
+
+#Projekt-3{
+    background-image: url(./picture/code-3385504_640.jpg);
+    color: white;
+}
+
+#Projekt-4{
+    background-image: url(./picture/coding-699318_640.jpg);
+    color: white;
 }
 
 .footer{
