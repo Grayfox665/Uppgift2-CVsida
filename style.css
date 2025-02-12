@@ -35,11 +35,12 @@ body{
     display: flex;
     grid-area: profile;
     margin: 10px;
+    justify-content: space-evenly;
 }
 
 .profile-picture{
     background-color: antiquewhite;
-    max-width: 50%;
+    max-width: 500px;
     height: auto;
     margin-right:10px ;
 }
@@ -62,7 +63,8 @@ body{
     grid-area: section;
 }
 .Projekt-card{
-    width: 300px;
+    position: relative;
+    max-width: 300px;
     height: 400px;
     background-color: red;
     border: 1px solid rgb(177, 0, 0);
@@ -87,6 +89,14 @@ body{
 
 #Projekt-4{
     background-image: url(./picture/coding-699318_640.jpg);
+    color: white;
+}
+
+.Projekt-rows a{
+    position: absolute;
+    bottom: 10% ;
+    padding: 3px;
+    background-color: black;
     color: white;
 }
 
@@ -122,7 +132,7 @@ body{
     .Projekt-rows{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-
+        margin: 10px;
         
     }
     .Projekt-card{
