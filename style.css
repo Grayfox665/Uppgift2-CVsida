@@ -38,9 +38,14 @@ body{
     justify-content: space-evenly;
 }
 
+.profile-picture-box{
+    max-width: 500px;
+    height: auto;
+}
+
 .profile-picture{
     background-color: antiquewhite;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
     margin-right:10px ;
 }
@@ -70,6 +75,7 @@ body{
     border: 1px solid rgb(177, 0, 0);
     border-radius: 5px;
     margin: 10px;
+
 }
 
 #Projekt-1{
@@ -110,7 +116,7 @@ body{
 
 
 /* mobile mode */
-@media(max-width: 480px){
+@media(max-width: 720px){
     .grid-container{
         grid-template-areas: "header navigation" "profile profile" 
         "title title" "section" "section" "footer footer" ;
@@ -119,8 +125,10 @@ body{
         display: flex;
         flex-direction: column;
     }
-.profile-picture{
+.profile-picture-box{
     max-width:100%;
+    display:flex;
+    justify-content: center;
 
 }
 
