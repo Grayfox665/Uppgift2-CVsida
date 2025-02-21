@@ -121,6 +121,7 @@ body{
     border-radius: 5px;
     margin: 10px;
     transition: 150ms ease;
+    border: 1px solid lightgray;
 }
 
 .Projekt-card h2{
@@ -272,6 +273,15 @@ body{
     padding: 10px;
 }
 
+.footer-link-icon {
+    scale: 1.5;
+    margin: 0px 15px;
+    transition: 150ms ease;
+}
+
+.footer-link-icon:hover {
+    transform: scale(1.5);
+}
 
 /* mobile mode */
 @media(max-width: 720px){
